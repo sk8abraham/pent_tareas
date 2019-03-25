@@ -13,7 +13,7 @@ from scapy.all import ICMP, IP, sr1, TCP
 def opciones():
 	'''
 	Funcion que obtiene los argumentos de la linea de comandos
-	Devuelve: Las opciones que se pasaron por linea de  comandos
+	Regresa: Las opciones que se pasaron por linea de  comandos
 	'''
 	parser = argparse.ArgumentParser()
 	parser.add_argument("-i","--ip", help="Selecciona el/los host(s) a atacar; si son varios usar la notacion CIDR", type= unicode, default=None)
@@ -24,7 +24,7 @@ def ip_puerto(args):
 	'''
 	Funcion que obtiene la(s) IP(s) de las opciones y el (los) puerto(s) de las opciones
 	Recibe: Los argumentos por linea de comandos y sus valores
-	Devuelve: Una lista con la(s) IP(s) (son varias si se utilizo notacion CIDR, devuelve una si se utilizo nombre de dominioo IP); y una lista con el (los) puerto(s) especificado(s)
+	Regresa: Una lista con la(s) IP(s) (son varias si se utilizo notacion CIDR, regresa una si se utilizo nombre de dominioo IP); y una lista con el (los) puerto(s) especificado(s)
 	'''
 	ports=[]
 	for p in args.port.split(","):

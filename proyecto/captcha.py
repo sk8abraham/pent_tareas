@@ -1,5 +1,10 @@
 #!/usr/bin/python
-
+###############################################
+######### Isaias Abraham Manzano Cruz #########
+###############################################
+'''
+Programa con el que rompi el captcha de wordpress
+'''
 import requests
 import re
 from HTMLParser import HTMLParser

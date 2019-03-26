@@ -2,6 +2,7 @@
 ###############################################
 ######### Isaias Abraham Manzano Cruz #########
 ###############################################
+
 '''
 Programa con el que rompi el captcha de wordpress
 '''

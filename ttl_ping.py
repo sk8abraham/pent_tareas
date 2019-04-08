@@ -25,6 +25,7 @@ def main():
     '''
     Funcion principal
     '''
+
     opt = opciones()
     verifica(opt)
     p = subprocess.Popen(["ping", opt.ip,"-c","1"], stdout=subprocess.PIPE)

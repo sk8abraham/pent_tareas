@@ -9,7 +9,7 @@ import random
 import ipaddress
 from socket import gethostbyname
 from scapy.all import ICMP, IP, sr1, TCP
-
+ 
 def opciones():
 	'''
 	Funcion que obtiene los argumentos de la linea de comandos
